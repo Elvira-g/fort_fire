@@ -631,11 +631,28 @@ input[type="checkbox"]:checked + label:after {
     padding: 100px 0 120px 0;
 }
 
+
+.licenses-scrollbar-block {
+    width: 90%;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    background: rgba(253, 89, 30, 0.2);
+    border-radius: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--colorOrange);
+    border-radius: 11px;
+}
+
 .licenses-block {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
     font-family: Raleway;
     font-weight: 600;
     font-size: 22px;
@@ -643,6 +660,8 @@ input[type="checkbox"]:checked + label:after {
     text-align: left;
     color: var(--colorBlack);
     margin: 0 auto;
+    padding-bottom: 30px;
+    box-sizing: border-box;
 }
 
 .licenes-title {
@@ -650,12 +669,11 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .licenses-item:nth-child(1) {
-    width: 30%;
+    width: 40%;
 }
 
 .licenses-item:nth-child(2) {
-    width: 50%;
-    overflow: hidden;
+    width: 60%;
 }
 
 .licenses-item-title {
@@ -673,7 +691,6 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .permit-items {
-    overflow: auto;
     width: 100%;
 }
 
@@ -1461,7 +1478,7 @@ ymaps {
     }
 
     .licenses-item:nth-child(1) {
-        width: 35%;
+        width: 40%;
     }
 
     .licenses-items, .permit-items {
@@ -1767,7 +1784,7 @@ ymaps {
     }
 
     .licenses-item:nth-child(1) {
-        width: 47%;
+        width: 40%;
     }
 
     .licenses-item-title {
@@ -2054,11 +2071,11 @@ ymaps {
     }
 
     .licenses-item:nth-child(1) {
-        width: 27%;
+        width: 40%;
     }
 
     .licenses-item:nth-child(2) {
-        width: 65%;
+        width: 60%;
     }
 
     .fine-icon-number {
@@ -2256,11 +2273,15 @@ ymaps {
     }
 
     .licenses-item:nth-child(1) {
-        width: 45%;
+        width: 49%;
     }
 
     .licenses-item:nth-child(2) {
-        width: 50%;
+        width: 47%;
+    }
+
+    .licenses-items, .permit-items {
+        gap: 12px;
     }
 
     .fine {
