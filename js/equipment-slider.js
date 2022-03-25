@@ -31,7 +31,7 @@ let equipmentSlider = document.querySelector('.equipment-items-slider'),
 
   },
   equipmentSwipeStart = function() {
-    let evt = equipmentGetEvent();
+    let equipmentEvt = equipmentGetEvent();
 
     if (equipmentAllowSwipe) {
 
@@ -40,8 +40,8 @@ let equipmentSlider = document.querySelector('.equipment-items-slider'),
       equipmentNextTrf = (equipmentSlideIndex + 1) * -equipmentSlideWidth;
       equipmentPrevTrf = (equipmentSlideIndex - 1) * -equipmentSlideWidth;
 
-      equipmentPosInit = equipmentPosX1 = evt.clientX;
-      equipmentPosY1 = evt.clientY;
+      equipmentPosInit = equipmentPosX1 = equipmentEvt.clientX;
+      equipmentPosY1 = equipmentEvt.clientY;
 
       equipmentSliderTrack.style.transition = '';
 
@@ -56,15 +56,15 @@ let equipmentSlider = document.querySelector('.equipment-items-slider'),
   },
   equipmentSwipeAction = function() {
 
-    let evt = equipmentGetEvent(),
-      style = equipmentSliderTrack.style.transform,
-      equipmentTransform = +style.match(equipmentTrfRegExp)[0];
+    let equipmentEvt = equipmentGetEvent(),
+      equipmentStyle = equipmentSliderTrack.style.transform,
+      equipmentTransform = +equipmentStyle.match(equipmentTrfRegExp)[0];
 
-    equipmentPosX2 = equipmentPosX1 - evt.clientX;
-    equipmentPosX1 = evt.clientX;
+    equipmentPosX2 = equipmentPosX1 - equipmentEvt.clientX;
+    equipmentPosX1 = equipmentEvt.clientX;
 
-    equipmentPosY2 = equipmentPosY1 - evt.clientY;
-    equipmentPosY1 = evt.clientY;
+    equipmentPosY2 = equipmentPosY1 - equipmentEvt.clientY;
+    equipmentPosY1 = equipmentEvt.clientY;
 
     if (!equipmentIsSwipe && !equipmentIsScroll) {
       let equipmentPosY = Math.abs(equipmentPosY2);
@@ -131,7 +131,6 @@ let equipmentSlider = document.querySelector('.equipment-items-slider'),
               }
           })
           if(equipmentSlideIndex>=0){
-            // slideNum.innerHTML = slideIndex+1;
           }
         } else if (equipmentPosInit > equipmentPosX1) {
             equipmentSlideIndex++;
@@ -144,7 +143,6 @@ let equipmentSlider = document.querySelector('.equipment-items-slider'),
               }
           })
           if(equipmentSlideIndex>=0){
-            // slideNum.innerHTML = slideIndex+1;
         }
         }
       }
@@ -178,7 +176,7 @@ let equipmentSlider = document.querySelector('.equipment-items-slider'),
 equipmentSliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
 equipmentSliderList.classList.add('grab');
 
-equipmentSliderTrack.addEventListener('transitionend', () => allowSwipe = true);
+equipmentSliderTrack.addEventListener('transitionend', () => equipmentAllowSwipe = true);
 equipmentSlider.addEventListener('touchstart', equipmentSwipeStart);
 equipmentSlider.addEventListener('mousedown', equipmentSwipeStart);
 
