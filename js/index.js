@@ -40,12 +40,6 @@ window.addEventListener('load', () => {
         })
     })
 
-    if (screen.width <= 414) {
-        smetaBtn.innerHTML = 'Отправить';
-    } else {
-        smetaBtn.innerHTML = 'Получить коммерческое предложение';
-    }
-
     menuBtn.addEventListener('click', function () {
         if(this.classList.contains('is-active')){
             closeMenuBtn(this);
@@ -144,6 +138,12 @@ window.addEventListener('load', () => {
         setTimeout(() => licenseModalBlock.style.display = 'none', 400);
     })
 })
+
+if (screen.width <= 414) {
+    smetaBtn.innerHTML = 'Отправить';
+} else {
+    smetaBtn.innerHTML = 'Получить коммерческое предложение';
+}
 
 window.addEventListener('click', (e) => {
     if(e.target == contactModal) {
