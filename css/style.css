@@ -730,8 +730,22 @@ input[type="checkbox"]:checked + label:after {
     background-position: center;
 }
 
+.licenses-img-block:nth-child(1):hover .licenses-img {
+    background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 0%, rgba(58, 138, 172, 0.15) 0%), url(../assets/img/licenses/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .licenses-img-block:nth-child(2) .licenses-img {
     background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 19.19%, rgba(58, 138, 172, 0.15) 100%), url(../assets/img/licenses/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.licenses-img-block:nth-child(2):hover .licenses-img {
+    background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 0%, rgba(58, 138, 172, 0.15) 0%), url(../assets/img/licenses/2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -744,14 +758,36 @@ input[type="checkbox"]:checked + label:after {
     background-position: center;
 }
 
+.permit-img-block:nth-child(1):hover .permit-img {
+    background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 0%, rgba(58, 138, 172, 0.15) 0%), url(../assets/img/licenses/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .permit-img-block:nth-child(2) .permit-img {
     background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 19.19%, rgba(58, 138, 172, 0.15) 100%), url(../assets/img/licenses/4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+.permit-img-block:nth-child(2):hover .permit-img {
+    background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 0%, rgba(58, 138, 172, 0.15) 0%), url(../assets/img/licenses/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .permit-img-block:nth-child(3) .permit-img {
     background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 19.19%, rgba(58, 138, 172, 0.15) 100%), url(../assets/img/licenses/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.permit-img-block:nth-child(3):hover .permit-img {
+    background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 0%, rgba(58, 138, 172, 0.15) 0%), url(../assets/img/licenses/5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -764,6 +800,13 @@ input[type="checkbox"]:checked + label:after {
     background-position: center;
 }
 
+.permit-img-block:nth-child(4):hover .permit-img {
+    background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 0%, rgba(58, 138, 172, 0.15) 0%), url(../assets/img/licenses/6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .permit-img-block:nth-child(5) .permit-img {
     background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 19.19%, rgba(58, 138, 172, 0.15) 100%), url(../assets/img/licenses/7.png);
     background-repeat: no-repeat;
@@ -771,8 +814,22 @@ input[type="checkbox"]:checked + label:after {
     background-position: center;
 }
 
+.permit-img-block:nth-child(5):hover .permit-img {
+    background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 0%, rgba(58, 138, 172, 0.15) 0%), url(../assets/img/licenses/7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .permit-img-block:nth-child(6) .permit-img {
     background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 19.19%, rgba(58, 138, 172, 0.15) 100%), url(../assets/img/licenses/8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.permit-img-block:nth-child(6):hover .permit-img {
+    background: linear-gradient(84.22deg, rgba(3, 81, 118, 0.285) 0%, rgba(58, 138, 172, 0.15) 0%), url(../assets/img/licenses/8.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1142,6 +1199,9 @@ input[type="checkbox"]:checked + label:after {
 .smeta-btn {
     width: 347px;
     margin-top: 36px;
+    height: auto;
+    padding: 9px 0;
+    box-sizing: border-box;
 }
 
 .set {
@@ -2504,6 +2564,7 @@ ymaps {
 
     .smeta-btn {
         width: 100%;
+        padding: 4px 0;
     }
 
     .footer {
