@@ -1435,11 +1435,11 @@ ymaps {
     box-sizing: border-box;
 }
 
-.contacts-form .error {
+/* .contacts-form .error {
     position: absolute;
     top: 40px;
     left: 270px;
-}
+} */
 
 .mobile-policy {
     display: none;
